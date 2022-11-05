@@ -1,4 +1,4 @@
-# Homework 8
+# Homework 9
 This repository contains the data and SQL scripts to get you up and running. You have two approaches for this assignment:
 
 * `auto_gen.sql` is a database dump that if you run using `psql` (as `psql -f auto_gen.sql`) will automatically create a new schema named hw8, and then add the necessary tables, data, and constraints.
