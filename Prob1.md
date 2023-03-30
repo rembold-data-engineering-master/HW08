@@ -3,7 +3,7 @@
 - About how long did you work on this problem?
 
 
-How many users are attending meetings on their birthday?
+What street name has the greatest number of users living on it?
 - **Answer:** 
 ```sql
 

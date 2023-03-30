@@ -17,17 +17,17 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- Name: hw8; Type: SCHEMA; Schema: -; Owner: -
+-- Name: hw9; Type: SCHEMA; Schema: -; Owner: -
 --
 
-CREATE SCHEMA hw8;
+CREATE SCHEMA hw9;
 
 
 --
--- Name: SCHEMA hw8; Type: COMMENT; Schema: -; Owner: -
+-- Name: SCHEMA hw9; Type: COMMENT; Schema: -; Owner: -
 --
 
-COMMENT ON SCHEMA hw8 IS 'standard public schema';
+COMMENT ON SCHEMA hw9 IS 'standard public schema';
 
 
 SET default_tablespace = '';
@@ -35,10 +35,10 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: appointments; Type: TABLE; Schema: hw8; Owner: -
+-- Name: appointments; Type: TABLE; Schema: hw9; Owner: -
 --
 
-CREATE TABLE hw8.appointments (
+CREATE TABLE hw9.appointments (
     appointment_id bigint,
     start_time timestamp without time zone,
     duration interval,
@@ -48,10 +48,10 @@ CREATE TABLE hw8.appointments (
 
 
 --
--- Name: participants; Type: TABLE; Schema: hw8; Owner: -
+-- Name: participants; Type: TABLE; Schema: hw9; Owner: -
 --
 
-CREATE TABLE hw8.participants (
+CREATE TABLE hw9.participants (
     appointment_id bigint,
     user_id bigint,
     is_attending character varying(5)
@@ -59,10 +59,10 @@ CREATE TABLE hw8.participants (
 
 
 --
--- Name: users; Type: TABLE; Schema: hw8; Owner: -
+-- Name: users; Type: TABLE; Schema: hw9; Owner: -
 --
 
-CREATE TABLE hw8.users (
+CREATE TABLE hw9.users (
     user_id bigint,
     first_name character varying(50),
     last_name character varying(50),
@@ -76,10 +76,10 @@ CREATE TABLE hw8.users (
 
 
 --
--- Data for Name: appointments; Type: TABLE DATA; Schema: hw8; Owner: -
+-- Data for Name: appointments; Type: TABLE DATA; Schema: hw9; Owner: -
 --
 
-COPY hw8.appointments (appointment_id, start_time, duration, apt_timezone, apt_topic) FROM stdin;
+COPY hw9.appointments (appointment_id, start_time, duration, apt_timezone, apt_topic) FROM stdin;
 1	2022-03-30 13:30:00	01:00:00	Pacific/Honolulu	I am angry about pottery
 2	2022-04-15 14:15:00	01:00:00	America/Chicago	Important topic: artists
 3	2022-03-30 11:00:00	02:00:00	America/Los_Angeles	Important topic: bears
@@ -584,10 +584,10 @@ COPY hw8.appointments (appointment_id, start_time, duration, apt_timezone, apt_t
 
 
 --
--- Data for Name: participants; Type: TABLE DATA; Schema: hw8; Owner: -
+-- Data for Name: participants; Type: TABLE DATA; Schema: hw9; Owner: -
 --
 
-COPY hw8.participants (appointment_id, user_id, is_attending) FROM stdin;
+COPY hw9.participants (appointment_id, user_id, is_attending) FROM stdin;
 1	4	Yes
 1	171	Yes
 1	35	No
@@ -9582,10 +9582,10 @@ COPY hw8.participants (appointment_id, user_id, is_attending) FROM stdin;
 
 
 --
--- Data for Name: users; Type: TABLE DATA; Schema: hw8; Owner: -
+-- Data for Name: users; Type: TABLE DATA; Schema: hw9; Owner: -
 --
 
-COPY hw8.users (user_id, first_name, last_name, street_address, city, state, country, birthdate, local_timezone) FROM stdin;
+COPY hw9.users (user_id, first_name, last_name, street_address, city, state, country, birthdate, local_timezone) FROM stdin;
 1	Brielle	Denys	6389 Dieppe Ave	Ferndale	California	US	1961-12-31	America/Los_Angeles
 2	Hanna	Collins	9732 The Green	Cabo San Lucas	Baja California Sur	MX	1956-08-22	America/Mazatlan
 3	Olivia	Brar	1881 Maple Ave	Moss Beach	California	US	1984-02-03	America/Los_Angeles

@@ -3,18 +3,9 @@
 - About how long did you work on this problem?
 
 
-Complete the below table with your counts:
+**Make sure to upload your completed pivot table!**
 
-| prompt          | count |
-|:----------------|:-----:|
-| angry           |  107  |
-| ruminations     |       |
-| important_topic |       |
-| love            |       |
-| thoughts        |       |
-
-
-Supporting sql:
+SQL to generate:
 ```sql
 
 
